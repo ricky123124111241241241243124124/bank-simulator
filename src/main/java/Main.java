@@ -1,7 +1,8 @@
 public class Main{
 
   public static void clearConsole() {
-        try {
+        
+    try {
             new ProcessBuilder("clear")
                     .inheritIO()
                     .start()
@@ -13,13 +14,7 @@ public class Main{
     public static void main(String[] args){
         Bank banca = new Bank();
 
-        //String iban = banca.Create_iban();
-        //System.out.println(iban);
+        banca.Avvia_banca();
 
-        String[] credenziali = banca.Crea_utente();
-
-        for (String value : credenziali){
-            System.out.print(value);
-        }
     }
 }
